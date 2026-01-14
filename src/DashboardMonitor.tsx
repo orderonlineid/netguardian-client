@@ -114,7 +114,7 @@ export default function App() {
         const fetchData = async () => {
             try {
                 // Gunakan URL backend Anda
-                const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:3001';
+                const apiUrl = 'http://localhost:3001';
                 const endpoint = `${apiUrl}/api/status`;
                 const response = await fetch(endpoint);
                 const data = await response.json();
